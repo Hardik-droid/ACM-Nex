@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Cormorant Garamond", Georgia, serif;
+  --font-display: "Cormorant Garamond", serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+/* Custom global styles for the high-end Editorial Theme */
+body {
+  background-color: #fcfaf7;
+  color: #1a1a1a;
+  font-family: "Inter", ui-sans-serif, system-ui, sans-serif;
+}
+
+/* Custom scrollbars matching the editorial theme */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(26, 26, 26, 0.15);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(26, 26, 26, 0.3);
+}
+
+/* 
+ * -------------------------------------------------------------
+ * EDITORIAL THEME STYLE MAP OVERRIDES
+ * Maps existing green/cream classes to premium matte black/linen
+ * -------------------------------------------------------------
+ */
+
+/* Map deep green to black */
+.bg-\[\#1A4331\], .bg-\[\#1A4331\]\/80, .bg-\[\#1A4331\]\/90 {
+  background-color: #1a1a1a !important;
+}
+
+.text-\[\#1A4331\] {
+  color: #1a1a1a !important;
+}
+
+.border-\[\#1A4331\] {
+  border-color: #1a1a1a !important;
+}
+
+.border-\[\#1A4331\2f 10\] {
+  border-color: rgba(26, 26, 26, 0.08) !important;
+}
+
+.border-\[\#1A4331\2f 30\] {
+  border-color: rgba(26, 26, 26, 0.15) !important;
+}
+
+/* Hover transitions */
+.hover\:bg-\[\#255C44\]:hover {
+  background-color: #2e2e2e !important;
+}
+
+/* Map cream back to luxurious warm parchment (#fcfaf7) or sand (#e8e4df) */
+.bg-\[\#FAF6EE\] {
+  background-color: #fcfaf7 !important;
+}
+
+.bg-\[\#FAF6EE\2f 50\] {
+  background-color: rgba(252, 250, 247, 0.5) !important;
+}
+
+.bg-\[\#FAF6EE\2f 20\] {
+  background-color: rgba(24cf, 24cf, 24cf, 0.1) !important;
+}
+
+.hover\:bg-\[\#FAF6EE\]:hover {
+  background-color: #f5f2ed !important;
+}
+
+/* Map soft green elements to sand or warm off-white */
+.bg-\[\#E6EFEA\] {
+  background-color: #e8e4df !important;
+}
+
+.bg-\[\#E6EFEA\2f 30\] {
+  background-color: rgba(232, 228, 223, 0.3) !important;
+}
+
+.text-\[\#2B5F4A\] {
+  color: #1a1a1a !important;
+}
+
+.bg-\[\#2B5F4A\] {
+  background-color: #1a1a1a !important;
+}
+
+/* Map specific border colors */
+.border-\[\#EBE2D4\] {
+  border-color: rgba(26, 26, 26, 0.08) !important;
+}
+
+.hover\:border-\[\#1A4331\2f 30\]:hover {
+  border-color: rgba(26, 26, 26, 0.2) !important;
+}
+
+/* Accent status text mapped to premium values */
+.text-emerald-950\/80 {
+  color: rgba(26, 26, 26, 0.8) !important;
+}
+
+.text-emerald-950\/70 {
+  color: rgba(26, 26, 26, 0.7) !important;
+}
+
+.text-emerald-950\/60 {
+  color: rgba(26, 26, 26, 0.6) !important;
+}
+
+.text-emerald-950\/50 {
+  color: rgba(26, 26, 26, 0.5) !important;
+}
+
+.text-emerald-950\/40 {
+  color: rgba(26, 26, 26, 0.4) !important;
+}
+
+.text-emerald-950\/30 {
+  color: rgba(26, 26, 26, 0.3) !important;
+}
+
+.text-\[\#854D0E\], .text-amber-800 {
+  color: #5a4b3d !important; /* Elegant warm bronze/brown for alert details */
+}
+
+.bg-amber-50, .bg-amber-100 {
+  background-color: #f3efea !important;
+}
+
+/* Headings automatically use display font (serif) */
+h1, h2, h3, .font-display {
+  font-family: var(--font-display) !important;
+  letter-spacing: -0.02em !important;
+}
+
+/* Elegant editorial visual borders on card layout */
+.rounded-3xl {
+  border-radius: 12px !important;
+}
+
+.rounded-2xl {
+  border-radius: 8px !important;
+}
+
+.rounded-xl {
+  border-radius: 6px !important;
+}
+
+/* Custom styling for floating widgets and sliders to align with asymmetric layouts */
+.shadow-sm, .shadow-md, .shadow-lg, .shadow-2xl {
+  box-shadow: 0 4px 20px -2px rgba(26, 26, 26, 0.04) !important;
+}

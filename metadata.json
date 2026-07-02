@@ -1,0 +1,6 @@
+{
+  "name": "ACM Nexus",
+  "description": "Internal collaboration platform for ACM society coordination, managing schedules, task assignments, meeting outcomes, deadlines, and member roles.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
